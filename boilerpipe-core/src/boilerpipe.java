@@ -12,7 +12,7 @@ class BoilerpipeCLI {
       inputText += scanner.nextLine()+"\n";
     }
 
-    String output = ArticleExtractor.INSTANCE.getText(mockHtml);
+    String output = ArticleExtractor.INSTANCE.getText(inputText);
   
     System.out.println(output);
   }

@@ -213,8 +213,7 @@ Constructor for class de.l3s.boilerpipe.labels.<A HREF="./de/l3s/boilerpipe/labe
 <DT><A HREF="./de/l3s/boilerpipe/package-summary.html"><B>de.l3s.boilerpipe</B></A> - package de.l3s.boilerpipe<DD>
 The Boilerpipe top-level package.<DT><A HREF="./de/l3s/boilerpipe/conditions/package-summary.html"><B>de.l3s.boilerpipe.conditions</B></A> - package de.l3s.boilerpipe.conditions<DD>&nbsp;<DT><A HREF="./de/l3s/boilerpipe/document/package-summary.html"><B>de.l3s.boilerpipe.document</B></A> - package de.l3s.boilerpipe.document<DD>
 The classes in this package represent the simple Boilerpipe document model.<DT><A HREF="./de/l3s/boilerpipe/estimators/package-summary.html"><B>de.l3s.boilerpipe.estimators</B></A> - package de.l3s.boilerpipe.estimators<DD>&nbsp;<DT><A HREF="./de/l3s/boilerpipe/extractors/package-summary.html"><B>de.l3s.boilerpipe.extractors</B></A> - package de.l3s.boilerpipe.extractors<DD>
-This package contains some standard extractors (i.e., completely piped BoilerpipeFilters)
-<DT><A HREF="./de/l3s/boilerpipe/filters/english/package-summary.html"><B>de.l3s.boilerpipe.filters.english</B></A> - package de.l3s.boilerpipe.filters.english<DD>
+This package contains some standard extractors (i.e., completely piped BoilerpipeFilters)<DT><A HREF="./de/l3s/boilerpipe/filters/english/package-summary.html"><B>de.l3s.boilerpipe.filters.english</B></A> - package de.l3s.boilerpipe.filters.english<DD>
 The BoilerpipeFilters in this package have only been tested on English text.<DT><A HREF="./de/l3s/boilerpipe/filters/heuristics/package-summary.html"><B>de.l3s.boilerpipe.filters.heuristics</B></A> - package de.l3s.boilerpipe.filters.heuristics<DD>
 The BoilerpipeFilters in this package are pure heuristics.<DT><A HREF="./de/l3s/boilerpipe/filters/simple/package-summary.html"><B>de.l3s.boilerpipe.filters.simple</B></A> - package de.l3s.boilerpipe.filters.simple<DD>
 The BoilerpipeFilters in this package are straight-forward and probably not really specific to English.<DT><A HREF="./de/l3s/boilerpipe/labels/package-summary.html"><B>de.l3s.boilerpipe.labels</B></A> - package de.l3s.boilerpipe.labels<DD>&nbsp;<DT><A HREF="./de/l3s/boilerpipe/sax/package-summary.html"><B>de.l3s.boilerpipe.sax</B></A> - package de.l3s.boilerpipe.sax<DD>
@@ -548,6 +547,8 @@ Method in class de.l3s.boilerpipe.document.<A HREF="./de/l3s/boilerpipe/document
 Method in class de.l3s.boilerpipe.estimators.<A HREF="./de/l3s/boilerpipe/estimators/SimpleEstimator.html" title="class in de.l3s.boilerpipe.estimators">SimpleEstimator</A>
 <DD>Given the statistics of the document before and after applying the <A HREF="./de/l3s/boilerpipe/BoilerpipeExtractor.html" title="interface in de.l3s.boilerpipe"><CODE>BoilerpipeExtractor</CODE></A>,
  can we regard the extraction quality (too) low?
+ 
+ Works well with <A HREF="./de/l3s/boilerpipe/extractors/DefaultExtractor.html" title="class in de.l3s.boilerpipe.extractors"><CODE>DefaultExtractor</CODE></A>, <A HREF="./de/l3s/boilerpipe/extractors/ArticleExtractor.html" title="class in de.l3s.boilerpipe.extractors"><CODE>ArticleExtractor</CODE></A> and others.
 <DT><A HREF="./de/l3s/boilerpipe/sax/HTMLHighlighter.html#isOutputHighlightOnly()"><B>isOutputHighlightOnly()</B></A> - 
 Method in class de.l3s.boilerpipe.sax.<A HREF="./de/l3s/boilerpipe/sax/HTMLHighlighter.html" title="class in de.l3s.boilerpipe.sax">HTMLHighlighter</A>
 <DD>If true, only HTML enclosed within highlighted content will be returned
@@ -613,7 +614,7 @@ Constructor for class de.l3s.boilerpipe.filters.simple.<A HREF="./de/l3s/boilerp
 Constructor for class de.l3s.boilerpipe.filters.simple.<A HREF="./de/l3s/boilerpipe/filters/simple/MinClauseWordsFilter.html" title="class in de.l3s.boilerpipe.filters.simple">MinClauseWordsFilter</A>
 <DD>&nbsp;
 <DT><A HREF="./de/l3s/boilerpipe/filters/english/MinFulltextWordsFilter.html" title="class in de.l3s.boilerpipe.filters.english"><B>MinFulltextWordsFilter</B></A> - Class in <A HREF="./de/l3s/boilerpipe/filters/english/package-summary.html">de.l3s.boilerpipe.filters.english</A><DD>Keeps only those content blocks which contain at least k full-text words
- (measured by <CODE>HeuristicFilterBase.getNumFullTextWords(TextBlock)</CODE>). k is 30 by default.<DT><A HREF="./de/l3s/boilerpipe/filters/english/MinFulltextWordsFilter.html#MinFulltextWordsFilter(int)"><B>MinFulltextWordsFilter(int)</B></A> - 
+ (measured by <CODE>HeuristicFilterBase.getNumFullTextWords(TextBlock)</CODE>).<DT><A HREF="./de/l3s/boilerpipe/filters/english/MinFulltextWordsFilter.html#MinFulltextWordsFilter(int)"><B>MinFulltextWordsFilter(int)</B></A> - 
 Constructor for class de.l3s.boilerpipe.filters.english.<A HREF="./de/l3s/boilerpipe/filters/english/MinFulltextWordsFilter.html" title="class in de.l3s.boilerpipe.filters.english">MinFulltextWordsFilter</A>
 <DD>&nbsp;
 <DT><A HREF="./de/l3s/boilerpipe/filters/simple/MinWordsFilter.html" title="class in de.l3s.boilerpipe.filters.simple"><B>MinWordsFilter</B></A> - Class in <A HREF="./de/l3s/boilerpipe/filters/simple/package-summary.html">de.l3s.boilerpipe.filters.simple</A><DD>Keeps only those content blocks which contain at least <em>k</em> words.<DT><A HREF="./de/l3s/boilerpipe/filters/simple/MinWordsFilter.html#MinWordsFilter(int)"><B>MinWordsFilter(int)</B></A> - 
@@ -835,7 +836,7 @@ Static variable in class de.l3s.boilerpipe.sax.<A HREF="./de/l3s/boilerpipe/sax/
  absolute and relative font size.
 <DT><A HREF="./de/l3s/boilerpipe/sax/CommonTagActions.html#TA_IGNORABLE_ELEMENT"><B>TA_IGNORABLE_ELEMENT</B></A> - 
 Static variable in class de.l3s.boilerpipe.sax.<A HREF="./de/l3s/boilerpipe/sax/CommonTagActions.html" title="class in de.l3s.boilerpipe.sax">CommonTagActions</A>
-<DD>Marks this tag as "ignorable", i.e. all its inner content is silently skipped.
+<DD>Marks this tag as "ignorable", i.e.
 <DT><A HREF="./de/l3s/boilerpipe/sax/CommonTagActions.html#TA_INLINE"><B>TA_INLINE</B></A> - 
 Static variable in class de.l3s.boilerpipe.sax.<A HREF="./de/l3s/boilerpipe/sax/CommonTagActions.html" title="class in de.l3s.boilerpipe.sax">CommonTagActions</A>
 <DD><B>Deprecated.</B>&nbsp;<I>Use <A HREF="./de/l3s/boilerpipe/sax/CommonTagActions.html#TA_INLINE_WHITESPACE"><CODE>CommonTagActions.TA_INLINE_WHITESPACE</CODE></A> instead</I>
@@ -850,8 +851,8 @@ Static variable in class de.l3s.boilerpipe.sax.<A HREF="./de/l3s/boilerpipe/sax/
  HTML parsing process.<DT><A HREF="./de/l3s/boilerpipe/sax/TagActionMap.html#TagActionMap()"><B>TagActionMap()</B></A> - 
 Constructor for class de.l3s.boilerpipe.sax.<A HREF="./de/l3s/boilerpipe/sax/TagActionMap.html" title="class in de.l3s.boilerpipe.sax">TagActionMap</A>
 <DD>&nbsp;
-<DT><A HREF="./de/l3s/boilerpipe/filters/english/TerminatingBlocksFinder.html" title="class in de.l3s.boilerpipe.filters.english"><B>TerminatingBlocksFinder</B></A> - Class in <A HREF="./de/l3s/boilerpipe/filters/english/package-summary.html">de.l3s.boilerpipe.filters.english</A><DD>Finds blocks which are potentially indicating the end of an article text and marks
- them with <A HREF="./de/l3s/boilerpipe/labels/DefaultLabels.html#INDICATES_END_OF_TEXT"><CODE>DefaultLabels.INDICATES_END_OF_TEXT</CODE></A>.<DT><A HREF="./de/l3s/boilerpipe/filters/english/TerminatingBlocksFinder.html#TerminatingBlocksFinder()"><B>TerminatingBlocksFinder()</B></A> - 
+<DT><A HREF="./de/l3s/boilerpipe/filters/english/TerminatingBlocksFinder.html" title="class in de.l3s.boilerpipe.filters.english"><B>TerminatingBlocksFinder</B></A> - Class in <A HREF="./de/l3s/boilerpipe/filters/english/package-summary.html">de.l3s.boilerpipe.filters.english</A><DD>Finds blocks which are potentially indicating the end of an article text and
+ marks them with <A HREF="./de/l3s/boilerpipe/labels/DefaultLabels.html#INDICATES_END_OF_TEXT"><CODE>DefaultLabels.INDICATES_END_OF_TEXT</CODE></A>.<DT><A HREF="./de/l3s/boilerpipe/filters/english/TerminatingBlocksFinder.html#TerminatingBlocksFinder()"><B>TerminatingBlocksFinder()</B></A> - 
 Constructor for class de.l3s.boilerpipe.filters.english.<A HREF="./de/l3s/boilerpipe/filters/english/TerminatingBlocksFinder.html" title="class in de.l3s.boilerpipe.filters.english">TerminatingBlocksFinder</A>
 <DD>&nbsp;
 <DT><A HREF="./de/l3s/boilerpipe/document/TextBlock.html" title="class in de.l3s.boilerpipe.document"><B>TextBlock</B></A> - Class in <A HREF="./de/l3s/boilerpipe/document/package-summary.html">de.l3s.boilerpipe.document</A><DD>Describes a block of text.<DT><A HREF="./de/l3s/boilerpipe/document/TextBlock.html#TextBlock(java.lang.String)"><B>TextBlock(String)</B></A> - 
